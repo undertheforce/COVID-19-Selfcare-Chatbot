@@ -1,0 +1,118 @@
+{"intents": [
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "greeting",
+         "patterns": ["Hi there", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello. How are you?", "Hi. How are you?"],
+         "context": [""]
+        },
+        {"tag": "care",
+         "patterns":["How are you?", "and how are you?"],
+         "responses": ["I'm good","I'm fine"],
+         "context":[""]   
+        },
+        {"tag": "care_response",
+         "patterns":["fine","alright","I'm good thanks for asking","I'm fine thanks for asking","I'm alright thanks for asking"],
+         "responses": ["Good","Awesome"],
+         "context":[""]   
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "whoru",
+          "patterns": ["Who are you?", "What are you?", "Who you are?", "What is your name?","What do you do?","what should I call you", "whats your name?"],
+          "responses": ["I'm Maya, your COVID-19 self-assessment bot", "I'm Steve, a Covid-19 selfcare AI bot","My name is Maya, I give Covid-19 care advice and tell if the symptoms are sereous or not"],
+          "context": [""]
+        },
+        {"tag": "covid_first",
+         "patterns": ["What are some serious covid symptoms?","What are some serious corona virus symptoms?","How to check that i have covid?","How to check that i have corona virus?"],
+         "responses": ["If you have Severe difficulty in breathing, Severe chest pain, Feeling confused or unsure of where you are or Losing consciousness seek immediate medical attention. You and also ask me if you have any other symptoms."],
+         "context": [""]
+        },
+         {"tag": "fever",
+          "patterns": ["I have little fever", "I have fever","I have high fever","is having fever serious symptom of covid","fever"],
+          "responses": ["If your fever is 37.8 degrees Celsius/100 degrees Fahrenheit or higher, it is not normal and you have fever for more than 2-3 days, I recommend that you GET TESTED. If your fever seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+        },
+         {"tag": "cough",
+          "patterns": ["I have little cough", "I have cough","I have high cough","is having cough serious symptom of covid","cough"],
+          "responses":["If your cough is continuous, more than usual, making a whistling noise when breathing (not related to asthma, post-infectious reactive airways, COPD, or other known causes or conditions you already have) please GET TESTED. If your cough seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+         {"tag": "breath",
+          "patterns": ["I have little shortness of breath problem", "I have shortness of breath problem","I have high breath problem","is having shortness of breath serious symptom of covid","shortness of breath","breathing problem"],
+          "responses":["If you are out of breath or unable to breathe deeply (which is not related to asthma or other known causes or conditions you already have) is a serious symptom, so please GET TESTED. If your breathing problem seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+         {"tag": "throat",
+          "patterns": ["I have little sore throat","I have little raw throat", "I have sore throat","I have raw throat","is having sore throat serious symptom of covid","is having raw throat serious symptom of covid","sore throat","raw throat"],
+          "responses":["If your sore throat is not related to seasonal allergies, acid reflux, or other known causes or conditions you already have, then GET TESTED. If your raw throat seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "swallow",
+          "patterns": ["I have little swallowing problem", "I have swallowing problem","I have a difficulty while swallowing","is having difficulty in swallowing serious symptom of covid","difficulty in swallowing"],
+          "responses":["If you have painful swallowing (which is not related to other known causes or conditions you already have), I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "nose",
+          "patterns": ["I have little runny nose","I have little congested nose","I have little stuffy nose", "I have runny nose","I have a stuffy nose","is having runny nose a serious symptom of covid","runny nose","stuffy nose","stuffed nose","congested nose"],
+          "responses":["If your runny nose is not related to seasonal allergies, being outside in cold weather, or other known causes or conditions you already have, then I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "smell",
+          "patterns": ["I have loss of smell", "I have loss of teste","I have decreased of taste","I have decreased of smell","is having loss of taste serious symptom of covid","is having loss of smell serious symptom of covid","decrease of taste","decrease of smell","loss of taste","loss of smell"],
+          "responses":["If you have decreased or loss of taste or smell (which is not related to seasonal allergies, neurological disorders, or other known causes or conditions you already have) I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "pink_eye",
+          "patterns": ["I pink eye", "I have red eye","is having red eye serious symptom of covid","is having pink eye serious symptom of covid","pink eye","red eye"],
+          "responses":["If you have pink eye or conjunctivitis (which is not related to reoccurring styes or other known causes or conditions you already have) I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "headache",
+          "patterns": ["I have little headache", "I have a headahe","I have bad headache","is having headache a serious symptom of covid","headache"],
+          "responses":["If your headache is unusual, long-lasting (which is not related to tension-type headaches, chronic migraines, or other known causes or conditions you already have) I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "digestives",
+          "patterns": ["I have little digestion problem", "I have stomach pain","I have diarrhea","I'm vomiting a lot","is having digestion problem serious symptom of covid","digestive issues"],
+          "responses":["If you have digestive issues like nausea/vomiting, diarrhea, stomach pain (which is not related to irritable bowel syndrome, menstrual cramps, or other known causes or conditions you already have) I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "muscle_aches",
+          "patterns": ["I have little muscle pain", "I have muscle aches","I have muscle pain","is having muscle pain serious symptom of covid","muscle pain","muscle aches"],
+          "responses":["If your muscle pain is unusual or long-lasting (which is not related to a sudden injury, fibromyalgia, or other known causes or conditions you already have) I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "tiredness",
+          "patterns": ["I get tired a lot", "I feeling extreme tiredness","I have tiredness","is feeling tired serious symptom of covid","extreme tiredness","tired"],
+          "responses":["If you are extreme tiredness is unusual, feeling fatigue or you are lacking energy (which is not related to depression, insomnia, thyroid dysfunction, or other known causes or conditions you already have) I recommend that you GET TESTED. If it seems normal you may be at risk, please self isolate or stay at home to limit the spread."],
+          "context": [""]
+         },
+        {"tag": "falling",
+          "patterns": ["I fall down a lot", "I feel like falling down","is falling down serious symptom of covid","falling down"],
+          "responses":["This applies mostly in older people, when they are feeling of falling doen often they should GET TESTED. If this is normal I recommend you to take some reset and stay at home"],
+          "context": [""]
+         },
+        {"tag": "cure",
+          "patterns": ["What are some common cure of Covid-19?","how to limit covid-19 spread?","How to protect ourself from covid-19?","How to be safe?","How to limit covid-19 exposure?"],
+          "responses":["There are some basic steps you can follow to limit the spred. The most effective one is to wear mask when you go out. Stay 6 feet apart from others who do not live with you. Avoid crowds and poorly ventilated indoor spaces. Wash your hands often with soap and water. Use hand sanitizer if soap and water are not available. If possible do not got out. "],
+          "context": [""]
+         },
+        {"tag": "notuseful",
+          "patterns": ["This information is not useful"],
+          "responses":["I'm sorry about my services","Sorry to hear that","Sorry I'm not useful to you"],
+          "context": [""]
+         }
+    ]
+}
